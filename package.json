@@ -1,0 +1,22 @@
+{
+  "name": "desktopapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+      "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbderrazekGraies/DesktopApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbderrazekGraies/DesktopApp/issues"
+  },
+  "homepage": "https://github.com/AbderrazekGraies/DesktopApp#readme",
+  "devDependencies": {
+    "electron": "^23.0.0"
+  }
+}
