@@ -1,66 +1,79 @@
-
-body{
-    height: 100vh;
-    background-color: #C01326;
+body {
+  height: 100vh;
+  background-color: #c01326;
 }
 
-header{
-    width: 100%;
-    display: inline-flex;
-    justify-content: end;
+header {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
-main{
-    width: 100%;
-    display: grid;
-    justify-items: center;
+main {
+  width: 100%;
+  display: grid;
+  justify-items: center;
 }
 
-.types{
-    display: inline-flex;
-    justify-content: center;
+.types {
+  display: inline-flex;
+  justify-content: center;
 }
 
-.description{
-    margin: 10px;
-    height: 220px;
-    width: 75%;
-    background: #fff;
-    display: inline-flex;
-    justify-content: center;
-    border-radius: 10px;
-    align-items: center;
-
-    
+.description {
+  margin: 10px;
+  height: 220px;
+  width: 75%;
+  background: #fff;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
 }
 
-p{
-    text-align: center;
-    font-size: larger;
+p {
+  text-align: center;
+  font-size: larger;
 }
 
 .arrow-right {
-    margin: 20px;
-    width: 0; 
-    height: 0; 
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    
-    border-left: 20px solid rgb(199, 199, 199);
-    position: absolute;
-    left: 80%;
+  margin: 20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+
+  border-left: 20px solid rgb(199, 199, 199);
+  position: absolute;
+  left: 80%;
 }
 
 .arrow-left {
-    margin: 20px;
-    width: 0; 
-    height: 0; 
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent; 
-    
-    border-right:20px solid rgb(199, 199, 199);
-    position: absolute;
-    left: 15%;
+  margin: 20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
 
+  border-right: 20px solid rgb(199, 199, 199);
+  position: absolute;
+  left: 15%;
 }
 
+.ListePokemon {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.pokemon {
+  padding: 0;
+  margin: 10px;
+  width: 200px;
+  background: #fff;
+  display: grid;
+  justify-items: center;
+}
+
+.pokemon:hover {
+  transform: scale(1.2);
+}

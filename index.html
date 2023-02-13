@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="function.js" defer></script>
-    <title>Pokedex</title>
-</head>
-<body>
-    <header>
-        <input type="text" id="recherche" placeholder="Recherche" style="background: #D15561;">
-        <button style="background: none;border: none;" onclick="recherche()"><img src="Img/recherche.png" alt="" style="width: 30px;"></button>
-    </header>
-
-    <main>
-        <h1 id="name" style="color:aliceblue; padding: 0;"></h5>
-        <img id="img" src="Img/pokeball.png" alt="" style="width: 250px;height: 250px;position: relative;margin: 10px;padding: 0;margin: 0;">
-        <div class="types">
-        </div>
-        <div class="description">
-            <div class="arrow-left" onclick="left()"></div>
-            <div class="info"></div>
-            <div class="typestr" style="position: absolute;display: none;"></div>
-            <!--<div class="evolution" style="position: absolute;display: none;"><p>evolution and pre-evolution</p></div>-->
-        
-            <div class="arrow-right" onclick="right()"></div>
-        </div>
-    </main>
-    
-    <footer>
-
-    </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>pokedex</title>
+  </head>
+  <body>
+    <div>
+      <h2 style="text-align: center">Pokedex</h2>
+      <input
+        type="text"
+        id="recherche"
+        placeholder="Recherche"
+        style="background: #d15561; justify-self: end"
+      />
+    </div>
+    <div class="ListePokemon"></div>
+  </body>
 </html>
