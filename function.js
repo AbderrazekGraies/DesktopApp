@@ -18,7 +18,7 @@ async function desplayMoreInfo(specie) {
   const data = await res.json();
   console.log(data);
   info.innerHTML = `<p>Habitat : ${data.habitat.name}<br>
-                        Features : ${data.flavor_text_entries[0].flavor_text}</p>`;
+                        Features : ${data.flavor_text_entries[1].flavor_text}</p>`;
   displayEvolution(data.evolution_chain.url);
 }
 
@@ -43,7 +43,7 @@ async function desplaytypestr(types) {
   strongAgainst = strongAgainst.filter((s) => !weakAgainst.includes(s));
   weakAgainst = weakAgainst.filter((w) => !store.includes(w) || w === "dragon");
 
-  typestr.innerHTML = `<p>strong agaisnt :${strongAgainst.join(", ")}<p>
+  typestr.innerHTML = `<p>strong against :${strongAgainst.join(", ")}<p>
                         <p> weak against : ${weakAgainst.join(", ")}`;
 }
 
